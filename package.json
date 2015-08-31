@@ -1,19 +1,39 @@
 {
-  "name": "Periodical",
+  "name": "periodical",
   "version": "0.0.1",
-  "description": "A tool that gets urls from your newsletters",
+  "description": "A place to find lessons",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "test": "tests"
   },
-  "keywords": [
-    "newsletter",
-    "scraping"
-  ],
+  "dependencies": {
+    "expect": "^1.9.0",
+    "expect.js": "^0.3.1",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoskin": "^1.4.1",
+    "request": "^2.55.0",
+    "stylus": "^0.44.0",
+    "superagent": "^1.3.0",
+    "unfluff": "^0.10.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.2.5",
+    "superagent": "^1.3.0"
+  },
+  "scripts": {
+    "test": "mocha tests",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsyogesh/periodical.git"
+  },
   "author": "Yogesh Kumar",
   "license": "MIT",
-  "dependencies": {
-    "request": "^2.55.0",
-    "unfluff": "^0.10.0"
-  }
+  "bugs": {
+    "url": "https://github.com/itsyogesh/periodical/issues"
+  },
+  "homepage": "https://github.com/itsyogesh/periodical"
 }
